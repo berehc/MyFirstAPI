@@ -32,9 +32,9 @@ namespace MyFirstAPI.Controllers
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
-        [Route("Get/weatherforecast")]
-        [Route("Get/weatherforecast2")]
-        [Route("[action]")]
+        //[Route("Get/weatherforecast")]
+        //[Route("Get/weatherforecast2")]
+        //[Route("[action]")]
         public IEnumerable<WeatherForecast> Get()
         {
             _logger.LogDebug("Return wheatherforecast list");

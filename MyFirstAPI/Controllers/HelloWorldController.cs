@@ -14,6 +14,7 @@ namespace MyFirstAPI.Controllers
             _helloWorldService = helloWorld;
         }
 
+        [HttpGet]
         public IActionResult Get()
         {
             return Ok(_helloWorldService.GetHelloWorld());
