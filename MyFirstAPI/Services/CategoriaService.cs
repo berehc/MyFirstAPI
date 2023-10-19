@@ -2,7 +2,7 @@
 
 namespace MyFirstAPI.Services
 {
-    public class CategoriaService
+    public class CategoriaService : ICategoriaService
     {
         TareasContext context;
 
@@ -50,7 +50,7 @@ namespace MyFirstAPI.Services
         }
     }
 
-    public interface IcategoryService
+    public interface ICategoriaService
     {
         IEnumerable<Categoria> Get();
         Task Save(Categoria categoria);
