@@ -37,6 +37,7 @@ namespace MyFirstAPI.Controllers
         [Route("[action]")]
         public IEnumerable<WeatherForecast> Get()
         {
+            _logger.LogDebug("Return wheatherforecast list");
             return ListWeatherForecast;
         }
 
